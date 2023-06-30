@@ -1,0 +1,132 @@
+1.a.29
+2.c.20
+3.a.100
+4.c.63
+5.c.43
+6.b.k
+7.a.p
+8.b.FR
+9.c.bcab
+10.a.GOV
+11.2
+12.38
+13.window
+14.sun
+15.HJ
+
+java
+
+1. java and javac are bouth tools used in java jdk which are present in the path C:\Program Files\Java\jdk1.8.0_261\bin the command javac is used to compile the program and generate a class file and java command in used to run the generated class file
+
+2.JDK [java developer kit] is the pakage which has JRE and developer tools like java and javac commands
+
+JRE [java run-time environment] contains the JVM and the library files
+
+JVM [java virtual mechine] since java is platform indipendent it needs a virtual machine the runs the code
+
+3. DataType[] arrayName = {value1,value2,....};
+ex. String[] names ={"chandan","kruthi","gowda","madhu"};
+
+4. class : is a blueprint for creating an object which contains variables and functions
+syntax 
+class ClassName{
+
+}
+object : an object is an instance of a class
+
+
+5. array is a collection of items of same DataType
+
+6.Diff between .java and .class
+java file is in english and can be understood and manipulated by programmers it is compiled by the javac tool.
+class file has a sequence of charecters which is not understandable by the programmer.
+the class file is platform indipendent meaning once the javac compiles the java file the class file can be run with the java tool in any platform.
+
+7.length of array data = 6
+
+8. structure of a method is 
+for main method :
+public static void main(String[] arrays){
+
+}
+where 
+public = acces specifier
+static = non-access specifier
+void = return type 
+main = name 
+() = parameters
+for methods with no return type
+static void methodName(){
+
+}
+for methods with return type
+static datatypeOfRetureValue methodName(){
+
+}
+
+9. Java is a high-level, general-purpose programming language developed by Sun Microsystems (now owned by Oracle) it is platform-independent, reliable, and secure. java is a highly Typed meaning everything in java needs to have a type,
+it is the most widely used programming language with more than one billion device running java
+
+10.variable stores the reference of a value in memory location
+types of variables are 
+local variable :  Declared within a method, constructor, or block and accessible only within that scope.
+class variable : Declared within a class but outside any method, constructor, or block. Each instance of the class has its own copy of instance variables.
+instance variables : Declared with the static keyword within a class but outside any method, constructor, or block. Class variables are shared among all instances of the class.
+
+11. a class veriable is a non primetive datatype which is used to create objects from user-defined classes.
+
+12. data type specifies the type of data that a variable can hold. It determines the range of values that the variable can store and the operations that can be performed on it. 
+
+ther are mainly 2 types 
+1) primetive datatypes 
+2) non-primitive datatypes
+
+1) primetive datatypes :
+Java provides several primitive data types, which are built-in and represent basic types of data. 
+They include:
+byte: used to store small integers. Size: 1 byte. Range: -128 to 127.
+short: used to store relatively small integers. Size: 2 bytes.
+int: used to store integers. Size: 4 bytes.
+long: used to store large integers. Size: 8 bytes.
+float: used to store decimal numbers with singl floating-point format. Size: 4 bytes.
+double: used to store decimal numbers with double floating-point format. Size: 8 bytes.
+boolean: used to store true or false values. Size: 1 bit.
+char: used to store single characters. Size: 2 bytes.
+2) non-primitive datatypes :
+String: used to store sequences of characters, text.
+Arrays: used to store collections of elements of the same type.
+Classes: used to create objects from user-defined classes.
+
+13. Object-Oriented Programming:
+Platform Independence:
+Automatic Memory Management:
+Robust and Reliable:
+Security:
+Doumentation:
+
+14. one-dimentional
+two-dimentional
+multi-dimentional
+
+15. array index out of bound exception is a runtime exception that occurs when you try to access an array element using an invalid index. It indicates that the index you provided is outside the valid range of the array.
+
+16. System.out.println() is a method in Java used to print output to the console. It is part of the System class, which is a built-in class in the Java library.
+
+17. The double equal operator (==) in Java is used for comparison between two values. mainly used to check if the values of the two operands are equal or not. The result of the comparison is a boolean value (true or false).
+
+18. The dot operator (.) in Java is used to access members (variables, methods, nested classes) of a class or object.
+
+19. base class of all classes is 
+java.lang.Object class
+
+20.
+1=class
+2=new
+3=String
+4=byte
+5=public
+6=static
+7=void
+8=int
+9=float
+10=return
