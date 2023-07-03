@@ -2,7 +2,7 @@ class Biscuit{
 	String name="oreo";
 	double price=10;
 	String manufacture;
-	String expirydata; 
+	String expiryDate; 
 	Biscuit(){
 		System.out.println("Executing biscuit");
 	}
@@ -11,6 +11,6 @@ class Biscuit{
 		System.out.println("Name: "+ref.name);
 		System.out.println("Price: "+ref.price);
 		System.out.println("MFD: "+ref.manufacture);
-		System.out.println("EXD: "+ref.expirydata);
+		System.out.println("EXD: "+ref.expiryDate);
 	}
 }
