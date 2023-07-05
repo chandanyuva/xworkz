@@ -20,7 +20,7 @@ class OreoRunner{
         System.out.println("small: "+ref2.small);
         
 		
-		Oreo ref3=new Oreo(45.00,2,true);
+		Oreo ref3=new Oreo(45.00,4,true);
         System.out.println("Name: "+ref3.price);
         System.out.println("quality: "+ref3.quality );
         System.out.println("small: "+ref3.small);
