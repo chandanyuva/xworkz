@@ -1,6 +1,6 @@
 class Oreo{
 	double price;
-	int quality;
+	int quantity;
 	boolean small;
 	
 	Oreo()
@@ -14,18 +14,18 @@ class Oreo{
 		this.price=price;
 	}
 	
-	Oreo(double price,int quality)
+	Oreo(double price,int quantity)
 	{
 		System.out.println("Running Oreo with double and int ");
 		this.price=price;
-		this.quality=quality;
+		this.quantity=quantity;
 	}
 	
-	Oreo(double price,int quality,boolean small)
+	Oreo(double price,int quantity,boolean small)
 	{
 		System.out.println("Running Oreo with double, int and boolean");
 		this.price=price;
-		this.quality=quality;
+		this.quantity=quantity;
 		this.small=small;
 	}
 }
