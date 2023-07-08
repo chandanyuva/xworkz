@@ -1,0 +1,110 @@
+1.d.matematernal Uncle
+2.d.grandfather
+3.d.cannot determined
+4.d.brother
+5.b.son
+6.d.X/A*Y
+7.c.R
+8.d.sister-in-law
+9.a.father
+10.c.s
+11.a.10kms
+12.d.west
+13.a.south-west
+14.b.south-east
+
+java 
+
+1 = True.
+2 = 10,110
+3 = True
+4 = main method is always static because it is the entry point of the program and it needs to be accesed by jvm without needing to creat any instances of class containing the main method.
+
+5 = program to revers the array
+import java.util.Arrays;
+class Reverse{
+	public static void main(String[] args){
+	int[] inputArray={10,45,7,9,2};
+	int[] outputArray =new int[inputArray.length];
+	for (int index=(inputArray.length)-1;index>=0;index--)
+	{
+		int newIndex=0;
+		outputArray[newIndex]=inputArray[index];
+		newIndex++;
+	}
+	System.out.println(Arrays.toString(inputArray));
+	System.out.println(Arrays.toString(outputArray));
+	}
+}
+
+6 = program to arrange array elements in decending order and remove duplicates
+input = {2,5,4,8,2,3,6,2}
+only sorting
+import java.util.Arrays;
+class Arange 
+{
+	public static void main(String args[])
+	{
+		int[] inputArray={2,5,4,8,2,3,6,2};
+		int[] noDuplicate=new int[20];
+		System.out.println("original array..");
+		System.out.println(Arrays.toString(inputArray));
+		int n = inputArray.length;
+		for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (inputArray[j] > inputArray[j + 1]) {
+                    int temp = inputArray[j];
+                    inputArray[j] = inputArray[j + 1];
+                    inputArray[j + 1] = temp;
+                }
+            }
+        }
+		System.out.println(Arrays.toString(inputArray));
+	}
+}
+
+
+7 = Done
+
+8 = .this is used to differentiate between local variables and instance variables and this() is used for chaining.
+
+9. = program to swap 2 numbers
+
+public class NumberSwap {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        
+        System.out.println("After swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
+
+10 = 
+1
+class Pattern1 {
+	public static void main(String[] args){
+	System.out.println("&   &\n  &  \n&   &");
+	}
+}
+2
+class Pattern2 {
+	public static void main(String[] args){
+	System.out.println("% % %\n% & %\n% % %");
+	}
+}
+3
+class Pattern2 {
+	public static void main(String[] args){
+	System.out.println("% % %\n%   %\n% % %");
+	}
+}
