@@ -1,0 +1,146 @@
+1. y is not concatinated (+) hence error
+
+2. static is used for a class String in main method hence error
+
+3. compilation error
+
+4. length is 4
+
+6. method parameters refer to the input variables that you can define within a method's parentheses. These parameters allow you to pass data or values into a method when it is called.
+
+7. compile-time polymorphism, also known as method overloading, is a feature that allows us to define multiple methods with the same name within the same class but with different parameter lists. The Java compiler determines which method to invoke based on the number or types of arguments passed during the method call.
+
+Example =
+
+public class MathOperations {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public double add(double a, double b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        MathOperations math = new MathOperations();
+
+        int result1 = math.add(5, 10);
+        System.out.println("Result 1: " + result1);
+
+        double result2 = math.add(3.14, 2.71);
+        System.out.println("Result 2: " + result2);
+
+        int result3 = math.add(1, 2, 3);
+        System.out.println("Result 3: " + result3);
+    }
+}
+
+8.  varargs (variable-length arguments) allows a method to accept variable number of arguments of the same type.
+using symbol (...)
+
+9. A package in java is basically forlders which contains files related to one project it use reverse domain name example = com.xworkz.ProjectName 
+
+there are 3 types of imports 
+1. single type imports : import only one class or interface from a specific package
+2. multiple type import :  import multiple classes or interfaces from the same package in a single import statement
+3. static import :  import static members (properties and methods) from a class so that you can use them directly without stating the class name
+
+10. a constructor can call another constructor using the "this" keyword or the "super" keyword, depending on whether we want to call a constructor within the same class or a constructor from the superclass
+
+example = 
+
+class Shop {
+    int size;
+	String brand;
+
+    public Shop(int size) {
+        this.size = size;
+    }
+
+    public Shop(int size, String brand) {
+        this(size);
+        this.brand= brand;
+    }
+}
+
+11. Fibonacci sequence
+
+public class FibonacciRecursion {
+
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println("Fibonacci Sequence:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+
+12. 
+
+13. Array equal check
+
+import java.util.Arrays;
+
+public class ArrayEqualCheck {
+
+    public static boolean areArraysEqual(int[] arr1, int[] arr2) {
+        if (arr1 == null || arr2 == null || arr1.length != arr2.length) {
+            return false;
+        }
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {5, 4, 3, 2, 1};
+
+        System.out.println("Arrays 1 and 2 are equal: " + areArraysEqual(array1, array2));
+    }
+}
+
+
+14. An Enum in java is a special datatype used to store named constants
+example =
+enum EnumName {
+    CONSTANT_1,
+    CONSTANT_2,
+    ...
+    CONSTANT_N
+}
+
+15. when we create an object in java using the "new" keyword the JVM first..
+1. checks the class which is used to represent the object and is loaded into memory
+2. JVM allocates memory for the object on the heap
+3. JVM initializes the fields of the object to their default values if the class has a constructorit is invoked
+4. now the constructor is executed
+5. after the object is fully initialized the "new" returns the reference to the new object
+
+16. Fields, Methods, Constructors, Inner Classes, Static Blocks, Static Fields, Static Methods, Enum Types
+
+
+
+
+

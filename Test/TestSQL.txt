@@ -1,0 +1,53 @@
+SQL
+
+
+1. CREATE DATABASE database_name;
+
+2. CREATE TABLE your_table_name (
+  column1 datatype1 constraints,
+  column2 datatype2 constraints,
+  ...
+);
+
+3. ALTER TABLE table_name
+ADD COLUMN new_column_name data_type constraints;
+
+4. ALTER TABLE table_name
+DROP COLUMN column_name;
+
+5. ALTER TABLE table_name
+RENAME COLUMN old_column TO new_column;
+
+6. ALTER TABLE table_name
+MODIFY COLUMN column_name new_data_type;
+
+7. UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE conditions;
+
+8. DELETE FROM table_name
+WHERE conditions;
+
+9. INSTR(string, search_string)
+
+10. 
+1. SELECT COUNT(*) AS total_rows FROM table_name;
+2. SELECT SUM(sales_amount) AS total_sales FROM sales_table;
+3. SELECT AVG(salary) AS average_salary FROM employees;
+4. SELECT MIN(age) AS min_age FROM people;
+5. SELECT MAX(price) AS max_price FROM products;
+6. SELECT department, AVG(salary) AS avg_salary
+	FROM employees
+	GROUP BY department;
+7. SELECT department, AVG(salary) AS avg_salary
+	FROM employees
+	GROUP BY department
+	HAVING AVG(salary) > 50000;
+
+
+
+
+
+
+
+
